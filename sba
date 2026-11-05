@@ -3,9 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Accessible Design Co.</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <header>
+        <h1>Accessible Design Co.</h1>
+
+        <nav role="navigation" aria-label="Main Navigation">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="grid-container">
+
+        <section id="about">
+            <h2>About Us</h2>
+            <img src="https://via.placeholder.com/400x200"
+                 alt="Team working together on accessible website design">
+            <p>
+                We create websites that are accessible, responsive,
+                and easy for everyone to use.
+            </p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+
+            <article>
+                <h3>Web Accessibility</h3>
+                <p>Making websites usable for all users.</p>
+            </article>
+
+            <article>
+                <h3>Responsive Design</h3>
+                <p>Websites that work on phones, tablets, and desktops.</p>
+            </article>
+
+            <article>
+                <h3>User Experience</h3>
+                <p>Simple and user-friendly website design.</p>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+
+            <form>
+                <label for="name">Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    aria-describedby="nameHelp">
+
+                <small id="nameHelp">
+                    Enter your full name.
+                </small>
+
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    aria-describedby="emailHelp">
+
+                <small id="emailHelp">
+                    Enter a valid email address.
+                </small>
+
+                <button type="submit" aria-label="Submit Contact Form">
+                    Submit
+                </button>
+            </form>
+
+            <div aria-live="polite">
+                Thank you for visiting our website.
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Accessible Design Co.</p>
+    </footer>
+
 </body>
 </html>
