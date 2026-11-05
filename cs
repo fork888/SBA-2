@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     line-height: 1.6;
-    background-color: #ffffff;
+    background-color: #f4f4f4;
     color: #222222;
 }
 
@@ -13,11 +13,11 @@ body {
 header {
     background-color: #003366;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
 }
 
-/* Navigation using Flexbox */
+/* Navigation */
 
 .nav-links {
     display: flex;
@@ -32,7 +32,11 @@ header {
     text-decoration: none;
 }
 
-/* Focus States */
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Focus Styles */
 
 a:focus,
 button:focus,
@@ -41,7 +45,7 @@ input:focus {
     outline-offset: 2px;
 }
 
-/* Grid Layout */
+/* Main Grid Layout */
 
 .grid-container {
     display: grid;
@@ -51,19 +55,21 @@ input:focus {
 }
 
 section {
-    border: 1px solid #ccc;
-    padding: 20px;
+    background-color: white;
+    border: 1px solid #cccccc;
     border-radius: 8px;
+    padding: 20px;
 }
 
 /* Images */
 
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
-/* Form */
+/* Contact Form Styles */
 
 form {
     display: flex;
@@ -83,7 +89,11 @@ button {
     cursor: pointer;
 }
 
-/* Tablet Breakpoint */
+button:hover {
+    background-color: #0055aa;
+}
+
+/* Tablet View */
 
 @media (max-width: 1024px) {
     body {
@@ -91,7 +101,7 @@ button {
     }
 }
 
-/* Mobile Breakpoint */
+/* Mobile View */
 
 @media (max-width: 600px) {
 
